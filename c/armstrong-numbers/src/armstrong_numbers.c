@@ -48,19 +48,15 @@ int is_armstrong_number(int candidate)
 
     numberOfDigits = get_number_of_digits(candidate);
     iteratorOfDigits = numberOfDigits;
-    printf("%d \n", numberOfDigits);
 
     while (iteratorOfDigits)
     {
         currentDigit = extract_digit(candidateCopy);
-        printf("%d \n", currentDigit);
         candidateCopy -= currentDigit * pow(10, get_number_of_digits(candidateCopy) - 1);
         sum += pow(currentDigit, numberOfDigits);
-        printf("Accumulated: %d\n", sum);
         iteratorOfDigits--;
     }
 
-    printf("Sum: %d \n", sum);
     if (sum == candidate)
     {
         return 1;
