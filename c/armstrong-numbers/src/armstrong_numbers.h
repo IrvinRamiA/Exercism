@@ -1,6 +1,9 @@
 #ifndef ARMSTRONG_NUMBERS
 #define ARMSTRONG_NUMBERS
 
-int is_armstrong_number(int candidate);
+#include <stdint.h>
+#include <stdbool.h>
+
+bool is_armstrong_number(uint32_t candidate);
 
 #endif
