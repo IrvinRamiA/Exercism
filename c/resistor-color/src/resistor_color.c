@@ -1,8 +1,6 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "resistor_color.h"
 
-#define LENGTH  (WHITE + 1)
+#define LENGTH  (10)
 
 resistor_band_t color_code(resistor_band_t color)
 {
