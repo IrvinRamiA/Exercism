@@ -5,8 +5,8 @@ resistor_value_t color_code(resistor_band_t resistor_band[])
 {
     resistor_value_t resistor_value;
 
-    resistor_value.value = resistor_band[0] * 10 + resistor_band[1];
-    resistor_value.value *= pow(10, resistor_band[2]);
+    resistor_value.value = (resistor_band[0] * 10 + resistor_band[1]) *
+                            pow(10, resistor_band[2]);
     resistor_value.unit = OHMS; 
     
     if(resistor_value.value >= KILOOHMS)

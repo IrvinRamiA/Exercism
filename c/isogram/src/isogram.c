@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <ctype.h>
-#include <stdio.h>
 #include "isogram.h"
 
 enum
